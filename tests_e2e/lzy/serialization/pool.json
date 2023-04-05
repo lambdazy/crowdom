@@ -1,0 +1,301 @@
+{
+    "project_id": "121693",
+    "private_name": "check pool",
+    "may_contain_adult_content": true,
+    "reward_per_assignment": 0.03,
+    "assignment_max_duration_seconds": 900,
+    "defaults": {
+        "default_overlap_for_new_task_suites": 1,
+        "default_overlap_for_new_tasks": 1
+    },
+    "will_expire": "2022-10-13T09:30:42.574000",
+    "auto_close_after_complete_delay_seconds": 0,
+    "auto_accept_solutions": false,
+    "auto_accept_period_day": 14,
+    "assignments_issuing_config": {
+        "issue_task_suites_in_creation_order": false
+    },
+    "priority": 30,
+    "filter": {
+        "and": [
+            {
+                "or": [
+                    {
+                        "operator": "LT",
+                        "value": 1095064242,
+                        "key": "date_of_birth",
+                        "category": "profile"
+                    }
+                ]
+            },
+            {
+                "and": [
+                    {
+                        "operator": "IN",
+                        "value": "RU",
+                        "key": "languages",
+                        "category": "profile"
+                    },
+                    {
+                        "or": [
+                            {
+                                "operator": "IN",
+                                "value": 225,
+                                "key": "region_by_phone",
+                                "category": "computed"
+                            },
+                            {
+                                "operator": "IN",
+                                "value": 187,
+                                "key": "region_by_phone",
+                                "category": "computed"
+                            },
+                            {
+                                "operator": "IN",
+                                "value": 149,
+                                "key": "region_by_phone",
+                                "category": "computed"
+                            }
+                        ]
+                    },
+                    {
+                        "or": [
+                            {
+                                "operator": "EQ",
+                                "value": "BROWSER",
+                                "key": "client_type",
+                                "category": "computed"
+                            },
+                            {
+                                "operator": "EQ",
+                                "value": "TOLOKA_APP",
+                                "key": "client_type",
+                                "category": "computed"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "quality_control": {
+        "captcha_frequency": "LOW",
+        "configs": [
+            {
+                "rules": [
+                    {
+                        "action": {
+                            "parameters": {
+                                "scope": "PROJECT",
+                                "duration": 8,
+                                "duration_unit": "HOURS",
+                                "private_comment": "Captcha"
+                            },
+                            "type": "RESTRICTION_V2"
+                        },
+                        "conditions": [
+                            {
+                                "operator": "GTE",
+                                "value": 5,
+                                "key": "stored_results_count"
+                            },
+                            {
+                                "operator": "LTE",
+                                "value": 30.0,
+                                "key": "success_rate"
+                            }
+                        ]
+                    }
+                ],
+                "collector_config": {
+                    "uuid": "310db6f7-3e61-441f-9498-c10bfa6a6403",
+                    "parameters": {
+                        "history_size": 10
+                    },
+                    "type": "CAPTCHA"
+                }
+            },
+            {
+                "rules": [
+                    {
+                        "action": {
+                            "parameters": {
+                                "scope": "PROJECT",
+                                "duration": 8,
+                                "duration_unit": "HOURS",
+                                "private_comment": "Skipped assignments"
+                            },
+                            "type": "RESTRICTION_V2"
+                        },
+                        "conditions": [
+                            {
+                                "operator": "GTE",
+                                "value": 5,
+                                "key": "skipped_in_row_count"
+                            }
+                        ]
+                    }
+                ],
+                "collector_config": {
+                    "uuid": "0ba5999e-da0b-436b-9183-4be838419a7d",
+                    "type": "SKIPPED_IN_ROW_ASSIGNMENTS"
+                }
+            },
+            {
+                "rules": [
+                    {
+                        "action": {
+                            "parameters": {
+                                "scope": "PROJECT",
+                                "duration": 1440,
+                                "duration_unit": "MINUTES",
+                                "private_comment": "Fast submits, <= 0.01"
+                            },
+                            "type": "RESTRICTION_V2"
+                        },
+                        "conditions": [
+                            {
+                                "operator": "GTE",
+                                "value": 1,
+                                "key": "total_submitted_count"
+                            },
+                            {
+                                "operator": "GTE",
+                                "value": 1,
+                                "key": "fast_submitted_count"
+                            }
+                        ]
+                    }
+                ],
+                "collector_config": {
+                    "uuid": "9190e075-0245-458a-b2ea-a9ca474736ac",
+                    "parameters": {
+                        "fast_submit_threshold_seconds": 1,
+                        "history_size": 10
+                    },
+                    "type": "ASSIGNMENT_SUBMIT_TIME"
+                }
+            },
+            {
+                "rules": [
+                    {
+                        "action": {
+                            "parameters": {
+                                "scope": "PROJECT",
+                                "duration": 120,
+                                "duration_unit": "MINUTES",
+                                "private_comment": "Fast submits, 0.01 < time <= 0.05"
+                            },
+                            "type": "RESTRICTION_V2"
+                        },
+                        "conditions": [
+                            {
+                                "operator": "GTE",
+                                "value": 1,
+                                "key": "total_submitted_count"
+                            },
+                            {
+                                "operator": "GTE",
+                                "value": 1,
+                                "key": "fast_submitted_count"
+                            }
+                        ]
+                    }
+                ],
+                "collector_config": {
+                    "uuid": "7cb9eee9-7201-4043-ad7f-3eb6ecd7833c",
+                    "parameters": {
+                        "fast_submit_threshold_seconds": 9,
+                        "history_size": 10
+                    },
+                    "type": "ASSIGNMENT_SUBMIT_TIME"
+                }
+            },
+            {
+                "rules": [
+                    {
+                        "action": {
+                            "parameters": {
+                                "scope": "PROJECT",
+                                "duration": 60,
+                                "duration_unit": "MINUTES",
+                                "private_comment": "Control tasks: [0, 1) done correctly"
+                            },
+                            "type": "RESTRICTION_V2"
+                        },
+                        "conditions": [
+                            {
+                                "operator": "GTE",
+                                "value": 1,
+                                "key": "total_answers_count"
+                            },
+                            {
+                                "operator": "GTE",
+                                "value": 0.0,
+                                "key": "correct_answers_rate"
+                            },
+                            {
+                                "operator": "LT",
+                                "value": 100.0,
+                                "key": "correct_answers_rate"
+                            }
+                        ]
+                    }
+                ],
+                "collector_config": {
+                    "uuid": "ad95564f-fa6c-43af-afca-db5ec4cbf120",
+                    "parameters": {
+                        "history_size": 1
+                    },
+                    "type": "GOLDEN_SET"
+                }
+            },
+            {
+                "rules": [
+                    {
+                        "action": {
+                            "parameters": {
+                                "scope": "PROJECT",
+                                "duration": 5,
+                                "duration_unit": "HOURS",
+                                "private_comment": "Completed many assignments, vacation"
+                            },
+                            "type": "RESTRICTION_V2"
+                        },
+                        "conditions": [
+                            {
+                                "operator": "GTE",
+                                "value": 20,
+                                "key": "assignments_accepted_count"
+                            }
+                        ]
+                    }
+                ],
+                "collector_config": {
+                    "uuid": "abf380be-7a84-4124-9d0d-316267a7c649",
+                    "type": "ANSWER_COUNT"
+                }
+            }
+        ]
+    },
+    "speed_quality_balance": {
+        "percent": 90,
+        "type": "TOP_PERCENTAGE_BY_QUALITY"
+    },
+    "mixer_config": {
+        "real_tasks_count": 8,
+        "golden_tasks_count": 1,
+        "training_tasks_count": 0
+    },
+    "owner": {
+        "id": "0ba8b02169300a7318c04a2d1544f8cf",
+        "myself": true
+    },
+    "id": "1286059",
+    "status": "ARCHIVED",
+    "last_close_reason": "COMPLETED",
+    "created": "2022-09-13T09:30:42.608000",
+    "last_started": "2022-09-13T09:36:02.632000",
+    "last_stopped": "2022-09-13T09:38:00.090000",
+    "type": "REGULAR"
+}

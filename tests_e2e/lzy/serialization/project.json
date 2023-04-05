@@ -1,0 +1,59 @@
+{
+    "owner": {
+        "id": "0ba8b02169300a7318c04a2d1544f8cf",
+        "myself": true
+    },
+    "public_name": "Cat or dog",
+    "public_description": "Identification of animals in photos",
+    "task_spec": {
+        "input_spec": {
+            "id": {
+                "required": true,
+                "hidden": true,
+                "type": "string"
+            },
+            "image": {
+                "required": true,
+                "hidden": false,
+                "type": "url"
+            }
+        },
+        "output_spec": {
+            "choice": {
+                "required": true,
+                "hidden": false,
+                "allowed_values": [
+                    "cat",
+                    "dog",
+                    "other"
+                ],
+                "type": "string"
+            }
+        },
+        "view_spec": {
+            "inputExample": null,
+            "localizationConfig": null,
+            "config": "{\n    \"view\": {\n        \"items\": [\n            {\n                \"url\": {\n                    \"path\": \"image\",\n                    \"type\": \"data.input\"\n                },\n                \"type\": \"view.image\"\n            },\n            {\n                \"data\": {\n                    \"path\": \"choice\",\n                    \"type\": \"data.output\"\n                },\n                \"options\": [\n                    {\n                        \"value\": \"dog\",\n                        \"label\": \"dog\"\n                    },\n                    {\n                        \"value\": \"cat\",\n                        \"label\": \"cat\"\n                    },\n                    {\n                        \"value\": \"other\",\n                        \"label\": \"other\"\n                    }\n                ],\n                \"disabled\": false,\n                \"validation\": {\n                    \"data\": {\n                        \"path\": \"choice\",\n                        \"type\": \"data.output\"\n                    },\n                    \"hint\": \"Choose one of the options\",\n                    \"type\": \"condition.required\"\n                },\n                \"type\": \"field.radio-group\"\n            }\n        ],\n        \"type\": \"view.list\"\n    },\n    \"plugins\": [\n        {\n            \"1\": {\n                \"data\": {\n                    \"path\": \"choice\",\n                    \"type\": \"data.output\"\n                },\n                \"payload\": \"dog\",\n                \"type\": \"action.set\"\n            },\n            \"type\": \"plugin.hotkeys\"\n        },\n        {\n            \"2\": {\n                \"data\": {\n                    \"path\": \"choice\",\n                    \"type\": \"data.output\"\n                },\n                \"payload\": \"cat\",\n                \"type\": \"action.set\"\n            },\n            \"type\": \"plugin.hotkeys\"\n        },\n        {\n            \"3\": {\n                \"data\": {\n                    \"path\": \"choice\",\n                    \"type\": \"data.output\"\n                },\n                \"payload\": \"other\",\n                \"type\": \"action.set\"\n            },\n            \"type\": \"plugin.hotkeys\"\n        },\n        {\n            \"layout\": {\n                \"kind\": \"scroll\",\n                \"taskWidth\": 700.0\n            },\n            \"notifications\": [\n                {\n                    \"content\": \"Before performing a task, make sure that all media elements have loaded.\",\n                    \"type\": \"view.text\"\n                },\n                {\n                    \"content\": \"If at least one media element is missing, reload the page.\",\n                    \"type\": \"view.text\"\n                }\n            ],\n            \"type\": \"plugin.toloka\"\n        }\n    ]\n}",
+            "inferDataSpec": false,
+            "type": "tb",
+            "lock": {
+                "core": "1.0.0",
+                "view.image": "1.0.0",
+                "condition.required": "1.0.0",
+                "field.radio-group": "1.0.0",
+                "view.list": "1.0.0",
+                "action.set": "1.0.0",
+                "plugin.hotkeys": "1.0.0",
+                "view.text": "1.0.0",
+                "plugin.toloka": "1.0.0"
+            }
+        }
+    },
+    "assignments_issuing_type": "AUTOMATED",
+    "assignments_automerge_enabled": false,
+    "status": "ACTIVE",
+    "created": "2022-02-24T12:21:08.090000",
+    "id": "98756",
+    "public_instructions": "<style>\n body {\n        scroll-behavior: smooth;\n    }\n\n    h2, h3, h4 {\n        font-weight: inherit;\n        font-style: four;\n        text-align: left;\n        text-transform: none;\n        margin: 20px 0 10px 0;\n    }\n\n    p {\n        font-size: 14px;\n        align: left;\n        color: #000000;\n        margin: 2px 0;\n        padding-right: 10px;\n    }\n\n    ul, ol {\n        padding-left: 15px;\n        margin-left: 25px;\n    }\n\n    li {\n        font-size: 14px;\n        align: left;\n        color: #000000;\n        margin: 2px 0;\n        padding-right: 10px;\n    }\n\n    .hide {\n        display: none\n    }\n\n    .hide + label ~ div {\n        display: none\n    }\n\n    .hide + label ~ p {\n        display: none\n    }\n\n    .hide + label {\n        border-bottom: 1px dotted blue;\n        padding: 0;\n        margin: 0;\n        cursor: pointer;\n        display: inline-block;\n        color: blue;\n        font-size: 14px;\n    }\n\n    .hide:checked + label {\n        border-bottom: 0;\n        color: green;\n        padding-right: 10px;\n        margin: 0;\n        font-size: 14px;\n    }\n\n    .hide:checked + label + div {\n        display: block;\n    }\n\n    .hide:checked + label + span {\n        display: block;\n    }\n\n    .hide:checked + label + p {\n        display: block;\n    }\n\n    img {\n        width: 100%;\n        max-width: 600px;\n    }\n</style>\n<div>\n <p>\n  Look at photo and choose one of the options:\n </p>\n <ul><li>\n   <strong>\n    dog\n   </strong>\n   – if dog is on the photo\n  </li><li>\n   <strong>\n    cat\n   </strong>\n   – if cat is on the photo\n  </li><li>\n   <strong>\n    other\n   </strong>\n   – if there is another animal in the photo, several animals, or no animals at all\n  </li></ul>\n</div>\n<div>\n <input class=\"hide\" id=\"hd-1\" type=\"checkbox\" />\n <label for=\"hd-1\">\n  <strong>\n   Click to learn the information about solution verification\n  </strong>\n </label>\n <div>\n  <p>\n   Several randomly selected tasks from the page are sent for verification. If the percentage of incorrectly\n            performed tasks is more than the maximum allowed, then the task page is rejected, and numbers of\n            incorrectly performed tasks are written in the message. Alternatively, your assignment will be evaluated\n            as a whole and rejected, if general accuracy is below allowed.\n  </p>\n  <p>\n   The tasks are numbered in order on the tasks page, starting from 1.\n  </p>\n  <div>\n   <input class=\"hide\" id=\"hd-2\" type=\"checkbox\" />\n   <label for=\"hd-2\">\n    <strong>\n     Task number example\n    </strong>\n   </label>\n   <div>\n    <img alt=\"Task number\" src=\"https://storage.yandexcloud.net/crowdom-public/instructions/task-number.jpg\" />\n   </div>\n  </div>\n  <p>\n   If you do not agree with the rejection of the task page, file an appeal by writing a message in the following\n            format:\n  </p>\n  <ul><li>\n    In the first line – the word &#34;Appeal&#34;\n   </li><li>\n    In the second line – the number of the task page\n   </li><li>\n    In the third line – the numbers of incorrectly performed tasks that you consider to have been performed\n                correctly\n   </li><li>\n    Starting from the fourth line, you can comment on specific tasks or the task page as a whole.\n   </li></ul>\n  <div>\n   <input class=\"hide\" id=\"hd-3\" type=\"checkbox\" />\n   <label for=\"hd-3\">\n    <strong>\n     Example when working from the browser\n    </strong>\n   </label>\n   <div>\n    <p>\n     After checking the &#34;Profile &gt; History&#34; section, you will see a similar entry:\n    </p>\n    <img alt=\"Rejection message\" src=\"https://storage.yandexcloud.net/crowdom-public/instructions/en/rejection-message_browser.png\" />\n    <p>\n     Green is the number of the\n     <strong>\n      task page\n     </strong>\n     , blue is the number of incorrectly performed\n     <strong>\n      tasks\n     </strong>\n     .\n    </p>\n    <p>\n     Let&#39;s say you think that you have correctly performed tasks 6 and 9. Then send a message in the\n                    following format:\n    </p>\n    <img alt=\"Appeal message\" src=\"https://storage.yandexcloud.net/crowdom-public/instructions/en/appeal-message_browser.png\" />\n    <p>\n     If it is possible to specify a topic when writing a message, write &#34;Appeal&#34;.\n    </p>\n   </div>\n  </div>\n  <div>\n   <input class=\"hide\" id=\"hd-4\" type=\"checkbox\" />\n   <label for=\"hd-4\">\n    <strong>\n     Example when working from a mobile app\n    </strong>\n   </label>\n   <div>\n    <p>\n     After checking the &#34;My Tasks&#34; section, you will see a card like this in the list:\n    </p>\n    <img alt=\"Completed tasks\" src=\"https://storage.yandexcloud.net/crowdom-public/instructions/en/completed-tasks_app.png\" />\n    <p>\n     Click on the card. On the task screen, the numbers of incorrectly performed tasks are outlined in blue.\n    </p>\n    <img alt=\"Rejection message\" src=\"https://storage.yandexcloud.net/crowdom-public/instructions/en/rejection-message_app.png\" />\n    <p>\n     Let&#39;s say you think that you have correctly performed tasks 5 and 9. Copy the task page number by\n                    clicking on &#34;Copy ID&#34; (outlined in green), click on &#34;Write to the customer&#34; (outlined in purple).\n                    Send the message is in the following format:\n    </p>\n    <img alt=\"Appeal message\" src=\"https://storage.yandexcloud.net/crowdom-public/instructions/en/appeal-message_app.png\" />\n   </div>\n  </div>\n  <p>\n   If your assignment was evaluated as a whole, you will see a message\n            &#34;Too few correct solutions&#34;. If you do not agree with the page rejection,\n            file an appeal by writing a message in the format described above. Specify the numbers of tasks you\n            think you have done correctly.\n  </p>\n </div>\n</div>\n",
+    "private_comment": "dogs-and-cats_EN"
+}

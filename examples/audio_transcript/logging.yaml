@@ -1,0 +1,24 @@
+version: 1
+disable_existing_loggers: true
+formatters:
+  simple:
+    format: '%(asctime)s - %(name)s:%(funcName)s:%(lineno)d - %(levelname)s: - %(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: simple
+    stream: ext://sys.stdout
+  file:
+    class: logging.FileHandler
+    level: DEBUG
+    formatter: simple
+    filename: crowdom.log
+    encoding: utf8
+loggers:
+  crowdom:
+    level: DEBUG
+    handlers: [console, file]
+  toloka:
+    level: INFO
+    handlers: [console, file]

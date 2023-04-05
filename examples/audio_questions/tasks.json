@@ -1,0 +1,752 @@
+[
+    {
+        "question": "noise",
+        "text": "*Вам доступны и рассрочка, и кредит, и наличные, и безналичные оплаты.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f212dc2e-ceb0-47c8-8c35-e31a193010a3.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*И светло и зелено было вокруг.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fc0f7dce-0d77-44ea-a7ba-abc698aa2103.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Накормленные досыта котики играли с трудом.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fa339df4-eed2-4dcc-a7a1-3d2db5888205.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Накормленные досыта, котики играли с трудом.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f0337f58-4407-48b7-9456-32d6859b19e9.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*В доме - мыши.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/faa5b876-9a23-42a1-b6cd-e9e6ec548913.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Он - котик - накормил нас обедом.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f64b98c7-3c32-4cfe-86a8-dc0b035603d0.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Решение - просто повесьте трубку.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fdd7ec5d-cd34-4633-bd36-cbb77b34a176.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Решение - просто, повесьте трубку.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/eb8cb14a-a3da-4b1f-8547-e575860ba74a.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Кредит под пятьдесят, семь процентов.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f7de606f-a031-4f8f-9a5f-a8a900e441f0.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Прошло три, четыре года.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f5be4d0d-5aee-48ff-991e-be14c9319443.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Да. Нет. Наверное.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fac9d8a3-073c-45ad-b0f5-c9b2ab6a6df7.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Мать, отец, сын.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f11a503b-3963-4218-aed0-9ee7e609b98f.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*В любом случае обращайтесь ко мне. В любую минуту.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f87de978-2f8b-4e08-8a1f-8655f9324260.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*В любом случае обращайтесь ко мне в любую минуту.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fdb0bc8a-2352-455b-84c4-cdce1b7ccfb0.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Давайте жить дружно?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/e8ad4ca7-e227-4458-b1e4-96ddb4037c05.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Поэтому берегу её, бегаю и плачу.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f0702d5b-df51-4e24-8aff-0bce8943d1c1.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Налей ещё. Вот это виски!*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fa5e5fdb-e0ef-48be-be27-d47bdfd14304.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Самого императора съели кошки.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fe809eb3-77d2-459e-b67f-b6cdee2509f2.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Этих тем - более сорока.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fa2a61eb-3cdc-4edf-99dc-33907a26fc7d.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Съешь гусиный паштет.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f011c246-bac9-4387-aa5f-b91dd2a3bd59.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Гран-при всем участникам!*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/ea585ba1-24e2-4034-b9a1-c104ef9c0fd0.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Розоватое мягкое небо.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f8b5ea1b-cd54-49e1-9d39-bc9f0bca5ad4.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Жёны ему лгали.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f368cc0c-ed41-4bbf-bfb6-042cfd0c061d.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Кто - он?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fbe5be13-8d5b-4ae1-812e-0f3a99e61673.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Кандидат наук уменьшил яркость.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f9ca9331-a08f-4d5e-b664-29a86c1d4433.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Нет?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/ead92de7-983a-4b24-bd98-e73863c04e1d.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Он ***проявил*** отходчивость?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/eeabda9e-a34a-48ea-8b0e-9bc14b839d61.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Комиссия ВГИК может обидеться, а простой актёр?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/faa85c8b-bf90-4da2-8008-e1d095ea6d53.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Этот ватман ***нужен*** вам?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f07b1ce6-6599-4656-9848-1527f1a8842b.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Что такое кашпо?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fa66f575-b286-47c3-96b4-69859a8a3c4e.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*И не говорил бы, а делал сразу, поджарый нэпман.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/ea8b58b1-a3d2-4d0f-a339-22d0a824a8df.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Чрезвычайно необходимо проявить ту жестокость, на которую рассчитывают при экзекуции.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f4b74214-2f60-4eea-8fdc-2e28adbcacf4.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Дрожью можно напугать доктора.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/e89afff1-a1b1-4751-b63c-186c5ec90438.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Петя ***оттолкнул*** Васю.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fc6b2618-e32c-4dea-aa1d-510e1d28b7e2.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Это крайне интересный диалект, в нём столько неизученных деталей.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f7b547a4-3c37-42bc-8d3e-fb434bbbdd75.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*А буквенные обозначения куда лучше цифровых.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f1152100-ae7d-4824-a619-06eb66de7e6f.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Смотреть на звёздное небо может каждый.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f74a0c25-2e9a-4833-b2a7-14ab93055332.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Шкала побед и поражений поместила грустного и изумлённого этим событием боксёра на последнее место.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fbdf2400-e6e2-49a7-9a28-d32ebe9a34b1.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Для попадания в аптеку необходимо отгадать загадки ведьмы и оплатить операцию птицам и птахам.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f3c180ac-17a2-4738-ac47-623fc51ec999.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Я сказал это лишь для того чтобы раззадорить тебя.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fb358894-1af0-47e5-b6f9-28dea3c04bd5.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*В середине бурьяна, где сохранилось углубление, выложенное кирпичами, и весной стояла жидкая зелёная тина, был выстроен наш вигвам.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f6d87b92-5a76-46a3-a897-9d56b2eff492.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Бамбук, джут, маранта, тростник и солома ― обои, сотканные из этих материалов, кажется, рождены щедрым южным солнцем и богатой растительностью тропиков.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fa33e989-2426-4a07-b5e4-2c759ff006a0.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Пришлось отпустить.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f9f5c462-af2f-4737-b476-dbaf9ec2204e.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Подходящая ли пора - утро?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fcbec574-1ca5-49a2-b3bd-db6f67fda638.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*До свидания?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f3bf591a-087e-468d-bfbe-77ccf2313216.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Это твой бзик, твоя идея фикс?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f44c075d-73c1-426b-a88c-71de1d23f6e3.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Влить вино, прибавить взбитые в пену белки и муку.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f290f23d-530c-4d31-b2ac-a076855fc7a1.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Как разговаривать с детьми об оспе, если они интересуются?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/ea289cb7-5f70-4b6f-b9fe-fc6b9746aa80.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Кто водится в мутной воде, кто мог бы напугать нас?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/eeb39fac-c35d-4258-afc2-1a2232f46150.wav"
+    },
+    {
+        "question": "noise",
+        "text": "*Он то хныкал, то из его груди вырывался ужасающий хрип.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f6e240cd-50d3-4968-a39b-466bc31cafc5.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Вам доступны и рассрочка, и кредит, и наличные, и безналичные оплаты.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f212dc2e-ceb0-47c8-8c35-e31a193010a3.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*И светло и зелено было вокруг.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fc0f7dce-0d77-44ea-a7ba-abc698aa2103.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Накормленные досыта котики играли с трудом.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fa339df4-eed2-4dcc-a7a1-3d2db5888205.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Накормленные досыта, котики играли с трудом.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f0337f58-4407-48b7-9456-32d6859b19e9.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*В доме - мыши.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/faa5b876-9a23-42a1-b6cd-e9e6ec548913.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Он - котик - накормил нас обедом.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f64b98c7-3c32-4cfe-86a8-dc0b035603d0.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Решение - просто повесьте трубку.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fdd7ec5d-cd34-4633-bd36-cbb77b34a176.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Решение - просто, повесьте трубку.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/eb8cb14a-a3da-4b1f-8547-e575860ba74a.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Кредит под пятьдесят, семь процентов.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f7de606f-a031-4f8f-9a5f-a8a900e441f0.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Прошло три, четыре года.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f5be4d0d-5aee-48ff-991e-be14c9319443.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Да. Нет. Наверное.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fac9d8a3-073c-45ad-b0f5-c9b2ab6a6df7.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Мать, отец, сын.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f11a503b-3963-4218-aed0-9ee7e609b98f.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*В любом случае обращайтесь ко мне. В любую минуту.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f87de978-2f8b-4e08-8a1f-8655f9324260.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*В любом случае обращайтесь ко мне в любую минуту.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fdb0bc8a-2352-455b-84c4-cdce1b7ccfb0.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Давайте жить дружно?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/e8ad4ca7-e227-4458-b1e4-96ddb4037c05.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Поэтому берегу её, бегаю и плачу.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f0702d5b-df51-4e24-8aff-0bce8943d1c1.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Налей ещё. Вот это виски!*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fa5e5fdb-e0ef-48be-be27-d47bdfd14304.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Самого императора съели кошки.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fe809eb3-77d2-459e-b67f-b6cdee2509f2.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Этих тем - более сорока.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fa2a61eb-3cdc-4edf-99dc-33907a26fc7d.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Съешь гусиный паштет.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f011c246-bac9-4387-aa5f-b91dd2a3bd59.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Гран-при всем участникам!*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/ea585ba1-24e2-4034-b9a1-c104ef9c0fd0.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Розоватое мягкое небо.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f8b5ea1b-cd54-49e1-9d39-bc9f0bca5ad4.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Жёны ему лгали.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f368cc0c-ed41-4bbf-bfb6-042cfd0c061d.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Кто - он?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fbe5be13-8d5b-4ae1-812e-0f3a99e61673.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Кандидат наук уменьшил яркость.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f9ca9331-a08f-4d5e-b664-29a86c1d4433.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Нет?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/ead92de7-983a-4b24-bd98-e73863c04e1d.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Он ***проявил*** отходчивость?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/eeabda9e-a34a-48ea-8b0e-9bc14b839d61.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Комиссия ВГИК может обидеться, а простой актёр?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/faa85c8b-bf90-4da2-8008-e1d095ea6d53.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Этот ватман ***нужен*** вам?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f07b1ce6-6599-4656-9848-1527f1a8842b.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Что такое кашпо?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fa66f575-b286-47c3-96b4-69859a8a3c4e.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*И не говорил бы, а делал сразу, поджарый нэпман.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/ea8b58b1-a3d2-4d0f-a339-22d0a824a8df.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Чрезвычайно необходимо проявить ту жестокость, на которую рассчитывают при экзекуции.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f4b74214-2f60-4eea-8fdc-2e28adbcacf4.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Дрожью можно напугать доктора.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/e89afff1-a1b1-4751-b63c-186c5ec90438.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Петя ***оттолкнул*** Васю.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fc6b2618-e32c-4dea-aa1d-510e1d28b7e2.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Это крайне интересный диалект, в нём столько неизученных деталей.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f7b547a4-3c37-42bc-8d3e-fb434bbbdd75.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*А буквенные обозначения куда лучше цифровых.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f1152100-ae7d-4824-a619-06eb66de7e6f.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Смотреть на звёздное небо может каждый.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f74a0c25-2e9a-4833-b2a7-14ab93055332.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Шкала побед и поражений поместила грустного и изумлённого этим событием боксёра на последнее место.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fbdf2400-e6e2-49a7-9a28-d32ebe9a34b1.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Для попадания в аптеку необходимо отгадать загадки ведьмы и оплатить операцию птицам и птахам.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f3c180ac-17a2-4738-ac47-623fc51ec999.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Я сказал это лишь для того чтобы раззадорить тебя.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fb358894-1af0-47e5-b6f9-28dea3c04bd5.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*В середине бурьяна, где сохранилось углубление, выложенное кирпичами, и весной стояла жидкая зелёная тина, был выстроен наш вигвам.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f6d87b92-5a76-46a3-a897-9d56b2eff492.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Бамбук, джут, маранта, тростник и солома ― обои, сотканные из этих материалов, кажется, рождены щедрым южным солнцем и богатой растительностью тропиков.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fa33e989-2426-4a07-b5e4-2c759ff006a0.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Пришлось отпустить.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f9f5c462-af2f-4737-b476-dbaf9ec2204e.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Подходящая ли пора - утро?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fcbec574-1ca5-49a2-b3bd-db6f67fda638.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*До свидания?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f3bf591a-087e-468d-bfbe-77ccf2313216.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Это твой бзик, твоя идея фикс?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f44c075d-73c1-426b-a88c-71de1d23f6e3.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Влить вино, прибавить взбитые в пену белки и муку.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f290f23d-530c-4d31-b2ac-a076855fc7a1.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Как разговаривать с детьми об оспе, если они интересуются?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/ea289cb7-5f70-4b6f-b9fe-fc6b9746aa80.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Кто водится в мутной воде, кто мог бы напугать нас?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/eeb39fac-c35d-4258-afc2-1a2232f46150.wav"
+    },
+    {
+        "question": "acoustics",
+        "text": "*Он то хныкал, то из его груди вырывался ужасающий хрип.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f6e240cd-50d3-4968-a39b-466bc31cafc5.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Вам доступны и рассрочка, и кредит, и наличные, и безналичные оплаты.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f212dc2e-ceb0-47c8-8c35-e31a193010a3.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*И светло и зелено было вокруг.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fc0f7dce-0d77-44ea-a7ba-abc698aa2103.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Накормленные досыта котики играли с трудом.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fa339df4-eed2-4dcc-a7a1-3d2db5888205.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Накормленные досыта, котики играли с трудом.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f0337f58-4407-48b7-9456-32d6859b19e9.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*В доме - мыши.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/faa5b876-9a23-42a1-b6cd-e9e6ec548913.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Он - котик - накормил нас обедом.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f64b98c7-3c32-4cfe-86a8-dc0b035603d0.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Решение - просто повесьте трубку.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fdd7ec5d-cd34-4633-bd36-cbb77b34a176.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Решение - просто, повесьте трубку.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/eb8cb14a-a3da-4b1f-8547-e575860ba74a.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Кредит под пятьдесят, семь процентов.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f7de606f-a031-4f8f-9a5f-a8a900e441f0.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Прошло три, четыре года.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f5be4d0d-5aee-48ff-991e-be14c9319443.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Да. Нет. Наверное.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fac9d8a3-073c-45ad-b0f5-c9b2ab6a6df7.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Мать, отец, сын.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f11a503b-3963-4218-aed0-9ee7e609b98f.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*В любом случае обращайтесь ко мне. В любую минуту.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f87de978-2f8b-4e08-8a1f-8655f9324260.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*В любом случае обращайтесь ко мне в любую минуту.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fdb0bc8a-2352-455b-84c4-cdce1b7ccfb0.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Давайте жить дружно?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/e8ad4ca7-e227-4458-b1e4-96ddb4037c05.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Поэтому берегу её, бегаю и плачу.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f0702d5b-df51-4e24-8aff-0bce8943d1c1.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Налей ещё. Вот это виски!*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fa5e5fdb-e0ef-48be-be27-d47bdfd14304.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Самого императора съели кошки.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fe809eb3-77d2-459e-b67f-b6cdee2509f2.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Этих тем - более сорока.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fa2a61eb-3cdc-4edf-99dc-33907a26fc7d.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Съешь гусиный паштет.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f011c246-bac9-4387-aa5f-b91dd2a3bd59.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Гран-при всем участникам!*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/ea585ba1-24e2-4034-b9a1-c104ef9c0fd0.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Розоватое мягкое небо.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f8b5ea1b-cd54-49e1-9d39-bc9f0bca5ad4.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Жёны ему лгали.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f368cc0c-ed41-4bbf-bfb6-042cfd0c061d.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Кто - он?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fbe5be13-8d5b-4ae1-812e-0f3a99e61673.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Кандидат наук уменьшил яркость.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f9ca9331-a08f-4d5e-b664-29a86c1d4433.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Нет?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/ead92de7-983a-4b24-bd98-e73863c04e1d.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Он ***проявил*** отходчивость?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/eeabda9e-a34a-48ea-8b0e-9bc14b839d61.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Комиссия ВГИК может обидеться, а простой актёр?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/faa85c8b-bf90-4da2-8008-e1d095ea6d53.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Этот ватман ***нужен*** вам?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f07b1ce6-6599-4656-9848-1527f1a8842b.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Что такое кашпо?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fa66f575-b286-47c3-96b4-69859a8a3c4e.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*И не говорил бы, а делал сразу, поджарый нэпман.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/ea8b58b1-a3d2-4d0f-a339-22d0a824a8df.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Чрезвычайно необходимо проявить ту жестокость, на которую рассчитывают при экзекуции.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f4b74214-2f60-4eea-8fdc-2e28adbcacf4.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Дрожью можно напугать доктора.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/e89afff1-a1b1-4751-b63c-186c5ec90438.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Петя ***оттолкнул*** Васю.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fc6b2618-e32c-4dea-aa1d-510e1d28b7e2.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Это крайне интересный диалект, в нём столько неизученных деталей.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f7b547a4-3c37-42bc-8d3e-fb434bbbdd75.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*А буквенные обозначения куда лучше цифровых.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f1152100-ae7d-4824-a619-06eb66de7e6f.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Смотреть на звёздное небо может каждый.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f74a0c25-2e9a-4833-b2a7-14ab93055332.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Шкала побед и поражений поместила грустного и изумлённого этим событием боксёра на последнее место.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fbdf2400-e6e2-49a7-9a28-d32ebe9a34b1.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Для попадания в аптеку необходимо отгадать загадки ведьмы и оплатить операцию птицам и птахам.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f3c180ac-17a2-4738-ac47-623fc51ec999.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Я сказал это лишь для того чтобы раззадорить тебя.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fb358894-1af0-47e5-b6f9-28dea3c04bd5.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*В середине бурьяна, где сохранилось углубление, выложенное кирпичами, и весной стояла жидкая зелёная тина, был выстроен наш вигвам.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f6d87b92-5a76-46a3-a897-9d56b2eff492.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Бамбук, джут, маранта, тростник и солома ― обои, сотканные из этих материалов, кажется, рождены щедрым южным солнцем и богатой растительностью тропиков.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fa33e989-2426-4a07-b5e4-2c759ff006a0.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Пришлось отпустить.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f9f5c462-af2f-4737-b476-dbaf9ec2204e.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Подходящая ли пора - утро?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/fcbec574-1ca5-49a2-b3bd-db6f67fda638.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*До свидания?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f3bf591a-087e-468d-bfbe-77ccf2313216.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Это твой бзик, твоя идея фикс?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f44c075d-73c1-426b-a88c-71de1d23f6e3.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Влить вино, прибавить взбитые в пену белки и муку.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f290f23d-530c-4d31-b2ac-a076855fc7a1.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Как разговаривать с детьми об оспе, если они интересуются?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/ea289cb7-5f70-4b6f-b9fe-fc6b9746aa80.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Кто водится в мутной воде, кто мог бы напугать нас?*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/eeb39fac-c35d-4258-afc2-1a2232f46150.wav"
+    },
+    {
+        "question": "intonation",
+        "text": "*Он то хныкал, то из его груди вырывался ужасающий хрип.*",
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_questions/data/f6e240cd-50d3-4968-a39b-466bc31cafc5.wav"
+    }
+]
