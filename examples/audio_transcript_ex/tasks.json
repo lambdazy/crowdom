@@ -1,0 +1,452 @@
+[
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/9cb0c9bc-b3c5-4984-b799-724f100250d1.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/d7f0b9dc-b4d6-4412-b9c5-6e6cdcdaf947.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/f361e245-cc6e-42f2-9eba-153224a4d221.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/03f38960-da28-4f06-96f7-aef7e29811a7.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/94c1e9c8-3ac2-44d9-bb27-1a8f9cd5f5a3.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/fc4f3e2c-0534-4708-95a7-09ca5c43c8e6.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/4773f0ac-82c4-40c8-904a-1f0df81fa0e2.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/db49db03-7f5e-48b6-bb15-b0d2f5a64a73.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/9bf4db95-ab8f-49c0-a41d-7dab3368e055.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/0f2bb114-2a9e-41a4-866b-5fca75716f99.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/7022c2d1-ce77-424e-944a-f8f0ac18500a.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/5c49c050-d977-4175-a084-6c670df2f2ab.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/34841205-11d3-4558-8745-30f7aab42626.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/0bbc00df-303a-4446-879f-c86a48354a75.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/ba23e3cf-9468-4089-9065-a0bce589fafa.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/f0a48af2-1a5e-4f66-9ad5-ba2d20417f5b.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/dd591c07-defb-46ab-8957-e12e062188fa.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/272c036f-38c8-4612-ba08-092106f8b280.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/e059625d-3b4b-4078-9183-a050f411f695.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/848bfa2c-1c93-423d-8d38-7f459d0cf64d.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/f81e1d1f-3bff-4503-9ac4-04f7f255507e.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/0eb9d082-0625-4753-831d-4738f9c3149e.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/ed9f791f-de58-4634-8434-a6e6c996476f.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/3ea9d11f-a636-4e30-8a57-5b57224c5300.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/3dfc3168-0d62-4871-84f0-6ae8457fe752.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/fa8abea5-6afc-413a-8df1-9edbfa067424.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/fac5a85b-f0d7-4429-a772-bcaa5ce968b8.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/fe6df557-fa10-46b5-b87e-05daccb05eb1.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/0a1a1783-b0ab-474b-86b2-f9b01c5d8a5b.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/a2f09dea-7ba3-442a-9511-ca3a06f9fa1d.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/9eeb3e9c-c8ac-4915-9d36-dd1a7a98341f.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/577d8f09-3c93-4608-bfc3-9a0a360ae376.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/6c0de895-316d-44f8-9885-c6977a148e24.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/9e5ef322-ccad-476a-8ede-ca7ba048c7d1.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/9ba73cae-587a-4543-b8e1-e8b6fea2b100.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/0edae9bf-2bc6-4dcc-8459-dc6cd411a0da.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/9966127f-1494-4e1a-85cc-f6d1ef9c345a.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/1300a664-aba0-4c1b-a5c8-6afb40a1e4bc.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/0f565030-3f11-4674-b44c-1e946bcb6010.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/b01abe0c-d69d-4c38-af6b-35716d445d68.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/3ecef11b-4cdb-4be6-b592-940d41edeb66.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/e2ff4479-c6f5-4a4e-83e4-1fdd780fc135.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/6e017a6a-518d-479d-a567-a176276ab559.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/abdd052a-1cbe-46ea-bd1a-b4d0253e30b3.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/96756298-bf19-4d19-a419-f6710ffe16c4.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/c89759b0-d77e-4946-9b0a-84964b4064d3.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/1aa409d5-d1f6-44ca-bc8e-5b1700fac232.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/cd0d9168-6c08-4726-a3c2-91cdb3deb3fe.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/2d7417e1-4482-41cf-bd11-57c76fb870d1.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/b3b7abc0-6112-4475-9618-b21463810508.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/6e077cde-db33-455f-9d08-d3fc0cd5b220.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/f10bb976-efd8-4005-8916-ac2a6f1fb00e.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/78fd91a5-6185-4311-a593-53ce2aee6173.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/9cdfc55e-e540-4c62-8651-4a1d2b634521.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/4fbf4810-9cf4-457a-bffb-e6ee0700871f.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/141a428d-2bc0-4778-800d-c1fcb02e795f.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/9a9bb0de-0972-463c-b7ff-c70bb45e54b1.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/c046ac7c-0071-4bb0-b3fe-2da0b8f2a502.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/fdb1b9d7-c80a-4d4d-978f-ec618fbe428b.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/b0c6eaf3-6e0e-439a-acb0-1a51c85d56f6.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/2efb227f-f6e7-48b4-ac0e-5c0d1d9b36b5.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/ee14a5a2-e344-4af8-8205-9a19d0dfe872.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/8b877be3-40c3-4c4e-a89d-a4ef65d9beee.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/060beb94-93a7-4cb7-83a0-1ddabe0cc21b.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/ec286389-4cd8-4e44-86e5-45857334aab5.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/906e5b2e-e951-4352-a21e-ad8e97b5c83e.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/bc7a67c0-37dc-4ad1-9e71-02408c0ebec1.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/1bd98daf-79b9-464a-b634-37f1907c59fc.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/36fa8d78-9a28-4b05-afd5-aafe906503f8.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/ee024e97-79c3-4041-a469-295a7a86afec.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/bb24cd51-df54-431c-af35-33385251f132.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/f243a683-1042-43c5-a774-09e626ab2697.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/91ee7640-597d-415e-9de5-f1a38c17a129.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/3733f501-92d3-4cc4-b15e-2d88d3a1a7dd.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/0f36e8a1-fb1a-4c74-b769-f59781cd0332.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/20369353-19bb-46da-8d9d-3a2647210d5e.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/849b90ec-0109-40a9-84b2-21aa16d93b9a.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/c4935a86-bf87-42ea-9693-405a628ca3b7.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/5920b898-ebb9-4afe-a416-697770105e4d.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/76958cb6-3da1-43d1-a8c6-7174b11c4c2e.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/91332398-948a-4206-bb50-b2bd8ce957b7.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/8d7d13b6-8541-4659-a414-c6145f7f6307.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/50eb1d74-fd92-4e29-b668-c07188ea8789.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/89fbdbca-a133-4655-9334-2252bd154332.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/4ed85091-8d78-4063-8f7e-e77dd1982075.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/2bfbcb14-482c-4b8a-b094-a1bf05b6df7b.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/3c81056a-f3e7-48fb-a5b3-356816f876b8.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/029247e9-e681-438c-a323-e6b48da4a5bf.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/543ab445-1f86-476a-84f2-a7605598e6a5.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/94a171a0-8af6-4264-8e1e-a1e30f905047.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/7cfc3e4b-3afd-4337-97fa-979d5e5f6c8a.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/a89cc1a5-1459-4d43-9742-6b0b9d2e0174.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/bce3c7bd-fe39-4d1f-b00c-61fb04dacc2c.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/ba270c09-2f63-4baa-9a7a-41184b91c5a5.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/76582d7d-8057-4e51-9c38-52146bf19bda.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/b2147aa9-d097-4e65-b1cc-46d9571fcdb3.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/f21d3fe1-2672-4936-81ed-34b734932fe6.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/af9b4ce7-eb18-4ff6-a05b-4ae1c168ef9f.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/979be231-e9a6-4e74-91b6-b1e72cc78c96.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/a95ece00-da3c-4e07-8254-0c80ddda4652.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/9e9bf9b7-cf79-4305-b291-bca7b8a2b485.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/96a243a2-6f96-4447-b96b-3f4a37e19c8a.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/3c6dc202-8441-4e8c-a8fe-b2545824b0f5.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/8ac03af8-0a14-4b27-a67f-5f23fca6a760.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/a24d3975-f959-404a-b0d1-e514dd96a181.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/5ce618d5-ed5d-43d5-95d8-90c9cc7fd1b8.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/d62141f1-8955-4c48-bbf3-27430982751a.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/c42311be-7de8-4b1d-83b3-c973bd02bbc1.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/013035a5-a96f-4f2c-93f0-4d383907be2e.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/00514723-da05-4d28-8165-526e634058bd.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/ef2e954e-d070-45a8-9174-5a41d4bac229.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/cef40e71-035c-4ca9-8a73-598a7a1573d5.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/41e9c38d-8ef8-451c-9c1f-81ede253bd0f.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/c04d82c0-5718-4a14-a6f8-e8e6ff8aac60.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/a2ab68a5-1b15-42c5-a14c-15ff37313b7e.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/b50828a1-8699-4eb9-9940-27dd00000da9.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/22e4a577-55ae-4a2e-ae24-8d8c08a076f9.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/be4fd89a-e85c-47db-8937-f3d1c37d78dd.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/2cb65be3-9ee4-48e5-a4c5-94cf12da671c.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/7c7cc6ab-6d06-4011-8d09-baafe751bf60.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/09183deb-0a00-47d9-b76e-c18acddfc6e1.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/53ed66b0-0bb0-4e94-971e-8acead6caa8f.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/a7493ac9-45b4-496e-8f56-2b546360275a.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/cfd184be-3752-4e7d-957a-bad8c49bdd8c.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/f79cbd3b-6283-4dbd-b8e6-9fc41d381f17.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/efc23060-d111-47ff-92a7-1031be36bc70.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/35495a16-3672-4ab3-a362-dd2cc214238b.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/4405a043-544b-4a1e-8e20-d12870cfcd6e.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/ade6ae1f-73f9-4feb-add0-04726004db21.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/6ff3fa0d-a01a-4742-a65b-4ba6c731fdde.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/6e6076a5-d030-484b-a5b1-e607cb53c2b4.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/530bd76d-1cb0-4c3e-ac3c-7cf32c015c13.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/e61645a1-6f41-4870-bb5d-502173176baa.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/70e5dda1-fc7c-4a54-9db7-48dc97264fe8.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/d515cb7f-451a-4326-8259-9ab13da3f3c6.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/97e7ce0a-75a0-43c2-a472-b94734f98b65.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/b1c5d0c3-26a9-40b7-a2c6-b3ee23c2db26.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/6dfcf2b3-6266-449d-86d7-13adb226bb5f.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/a4d0a66d-1960-4fff-8fb8-9bca0ea37c63.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/712029cb-d3ad-4ea8-8c99-9c2b0de8b7ad.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/d591b2dc-ecb8-45ae-b8e7-f25b52384740.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/fce60972-22e5-4621-8df4-b3220392362a.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/8047a37e-e68a-4d21-a24c-2f7b3d923081.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/5623bb71-ae37-41b3-8b63-e9d1f866f512.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/9777933e-d91b-41c8-8b4d-9df542674552.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/08d56454-21d2-4a85-b615-3a9fc4d819ec.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/3475d3e1-d562-49f2-bb46-53116cc93d3c.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/47d5c2c5-d555-495c-9446-a708302e6d0b.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/7b4edea3-1c68-4dbb-8702-d4eb1fbfacc7.wav"
+    },
+    {
+        "audio": "https://storage.yandexcloud.net/crowdom-public/examples/audio_transcript_ex/data/dd42676b-98f5-4ecb-bb00-06ab5c74b5c9.wav"
+    }
+]

@@ -1,0 +1,302 @@
+{
+  "view": {
+    "items": [
+      {
+        "content": {
+          "url": {
+            "path": "audio",
+            "type": "data.input"
+          },
+          "validation": {
+            "hint": {
+              "$ref": "vars.played-fully"
+            },
+            "type": "condition.played-fully"
+          },
+          "type": "view.audio"
+        },
+        "type": "view.group"
+      },
+      {
+        "content": {
+          "data": {
+            "path": "transcript",
+            "default": "",
+            "type": "data.output"
+          },
+          "validation": {
+            "conditions": [
+              {
+                "schema": {
+                  "type": "string",
+                  "pattern": "{{text_re}}"
+                },
+                "hint": {
+                  "$ref": "vars.pattern-hint"
+                },
+                "type": "condition.schema"
+              },
+              {
+                "condition": {
+                  "data": {
+                    "path": "transcript",
+                    "type": "data.output"
+                  },
+                  "schema": {
+                    "type": "string",
+                    "pattern": "^ +|  +"
+                  },
+                  "hint": {
+                    "$ref": "vars.extra-space"
+                  },
+                  "type": "condition.schema"
+                },
+                "type": "condition.not"
+              }
+            ],
+            "type": "condition.all"
+          },
+          "type": "field.textarea"
+        },
+        "label": {
+          "$ref": "vars.text-label"
+        },
+        "validation": {
+          "condition": {
+            "conditions": [
+              {
+                "to": "?",
+                "data": {
+                  "path": "transcript",
+                  "type": "data.output"
+                },
+                "type": "condition.equals"
+              },
+              {
+                "to": "sp",
+                "data": {
+                  "path": "class",
+                  "type": "data.output"
+                },
+                "type": "condition.equals"
+              }
+            ],
+            "type": "condition.all"
+          },
+          "hint": {
+            "$ref": "vars.choose-mis"
+          },
+          "type": "condition.not"
+        },
+        "type": "view.group"
+      },
+      {
+        "data": {
+          "path": "class",
+          "default": "sp",
+          "type": "data.output"
+        },
+        "options": [
+          {
+            "value": "sp",
+            "label": {
+              "$ref": "vars.sp"
+            }
+          },
+          {
+            "value": "si",
+            "label": {
+              "$ref": "vars.si"
+            }
+          },
+          {
+            "value": "mis",
+            "label": {
+              "$ref": "vars.mis"
+            }
+          }
+        ],
+        "validation": {
+          "conditions": [
+            {
+              "conditions": [
+                {
+                  "data": {
+                    "path": "transcript",
+                    "type": "data.output"
+                  },
+                  "type": "condition.empty"
+                },
+                {
+                  "condition": {
+                    "to": "sp",
+                    "data": {
+                      "path": "class",
+                      "type": "data.output"
+                    },
+                    "type": "condition.equals"
+                  },
+                  "type": "condition.not"
+                }
+              ],
+              "type": "condition.all"
+            },
+            {
+              "conditions": [
+                {
+                  "to": "sp",
+                  "data": {
+                    "path": "class",
+                    "type": "data.output"
+                  },
+                  "type": "condition.equals"
+                },
+                {
+                  "condition": {
+                    "data": {
+                      "path": "transcript",
+                      "type": "data.output"
+                    },
+                    "type": "condition.empty"
+                  },
+                  "type": "condition.not"
+                }
+              ],
+              "type": "condition.all"
+            }
+          ],
+          "hint": {
+            "$ref": "vars.incorrect-configuration"
+          },
+          "type": "condition.any"
+        },
+        "type": "field.radio-group"
+      }
+    ],
+    "validation": {
+      "condition": {
+        "data": {
+          "path": "transcript",
+          "type": "data.output"
+        },
+        "schema": {
+          "type": "string",
+          "pattern": " $"
+        },
+        "type": "condition.schema"
+      },
+      "hint": {
+        "$ref": "vars.last_space"
+      },
+      "type": "condition.not"
+    },
+    "type": "view.list"
+  },
+  "plugins": [
+    {
+      "action": {
+        "data": {
+          "path": "transcript",
+          "type": "data.output"
+        },
+        "payload": {
+          "data": {
+            "path": "transcript",
+            "type": "data.output"
+          },
+          "transformation": "lowercase",
+          "type": "helper.text-transform"
+        },
+        "type": "action.set"
+      },
+      "onChangeOf": {
+        "path": "transcript",
+        "type": "data.output"
+      },
+      "type": "plugin.trigger"
+    },
+    {
+      "action": {
+        "data": {
+          "path": "transcript",
+          "type": "data.output"
+        },
+        "payload": {
+          "data": {
+            "path": "transcript",
+            "type": "data.output"
+          },
+          "find": "ë",
+          "replace": "ё",
+          "type": "helper.replace"
+        },
+        "type": "action.set"
+      },
+      "onChangeOf": {
+        "path": "transcript",
+        "type": "data.output"
+      },
+      "type": "plugin.trigger"
+    },
+    {
+      "0": {
+        "view": {
+          "$ref": "view.items.0.content"
+        },
+        "type": "action.play-pause"
+      },
+      "1": {
+        "data": {
+          "path": "class",
+          "type": "data.output"
+        },
+        "payload": "sp",
+        "type": "action.set"
+      },
+      "2": {
+        "data": {
+          "path": "class",
+          "type": "data.output"
+        },
+        "payload": "si",
+        "type": "action.set"
+      },
+      "3": {
+        "data": {
+          "path": "class",
+          "type": "data.output"
+        },
+        "payload": "mis",
+        "type": "action.set"
+      },
+      "type": "plugin.hotkeys"
+    },
+    {
+      "layout": {
+        "kind": "scroll",
+        "taskWidth": 700
+      },
+      "notifications": [
+        {
+          "content": {
+            "$ref": "vars.audios-loaded"
+          },
+          "type": "view.text"
+        },
+        {
+          "content": {
+            "$ref": "vars.missing-audio"
+          },
+          "type": "view.text"
+        },
+        {
+          "content": {
+            "$ref": "vars.reload-page"
+          },
+          "type": "view.text"
+        }
+      ],
+      "type": "plugin.toloka"
+    }
+  ]
+}

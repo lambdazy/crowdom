@@ -1,0 +1,170 @@
+[
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/2fe01a524f0c45e2b6dd6bcbf28510c9.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/51d9ff2e9dfa47eabdada868d7d19036.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/e234616a557542d893c64102cbe7fd5e.jpeg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/87d238d9ec3d4c0a84af8cc1bf0024e6.jpg",
+        "choice": "cat"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/f00a3fa52c694e0fa51a165e22cf4628.jpg",
+        "choice": "cat"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/a4202f416e854793a66f34027fbdf068.png",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/5dd7e56114f64142a33431807cb75ecc.jpg",
+        "choice": "cat"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/17daa00ecc76416683699ce07f88ee53.jpeg",
+        "choice": "cat"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/44a8bddc132b4f7eba559e6f3dd39649.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/57b9ba06f7de4d7c8b3bb7e690487469.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/bee7036ef1cd4d44a3fb2335be0e51f6.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/1e9d58ebe8734126aa5c6e88558d706f.jpg",
+        "choice": "cat"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/9a98a303b41d4fc4b21d7d2e6be4387b.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/c4ed091dad624b99b3a3aeb596607786.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/f7c572551fbb4f8a94cc64b6185281e3.jpg",
+        "choice": "cat"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/99bc77c395cc44cd8eaf23b100e29589.jpg",
+        "choice": "cat"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/767baea57cc14245a2161ea212255103.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/8660a6eb31654460a10d686ef09316aa.jpg",
+        "choice": "cat"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/e10b88fc38fb49f99776034f6d729ef5.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/d7b11387188349688e361c24e2b972ad.jpg",
+        "choice": "cat"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/3bfc04b6db4a464dabc3abdf7eef4d9d.jpg",
+        "choice": "cat"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/403c6bc6ce754789bc1302813add32b6.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/33bee80ee1644ccf9eb6afab68fef4c0.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/e81e90466d1247c9a9b2a2e40cdf2c1a.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/68e61a1764d346edbd45a69cdeeed891.jpg",
+        "choice": "cat"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/fbb0d228965147ecabfcb070adda5cb6.jpg",
+        "choice": "cat"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/160c5da38d494cc393f9e281d645def9.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/6e5eea69ed9041129fd16f104d30d37b.jpg",
+        "choice": "cat"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/64513c280688475189471aa563f58f90.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/94c5170f2e2b4931af03242a531f3c52.jpg",
+        "choice": "cat"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/b6372bf0c41d48c7b74af9e3e82fefb9.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/d06e3f25c76349d4b156cadf50eb111f.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/07e1fa0c29dc43279faaea2d0dfdc84b.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/6ed66b1f35d44932bd7501442d1772ef.jpg",
+        "choice": "cat"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/ab42eedff4af4f96ad552e5602a550ba.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/741b65f935b74a28a09dd6afb06c5bb0.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/9026b51c938c405699c4be9a59f4630e.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/2bce7935f89a4c259b30ace5d50c6235.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/841ee7337d0e4145aa1a22fd07a08131.jpg",
+        "choice": "dog"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/dcdb302466e647469deab12229dc2ceb.jpg",
+        "choice": "cat"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/0bc36c831807421b8aef030586e4e585.jpg",
+        "choice": "cat"
+    },
+    {
+        "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/5d5a1e8340f44ab492b86bf899044afd.jpg",
+        "choice": "cat"
+    }
+]

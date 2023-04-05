@@ -1,0 +1,134 @@
+[
+    {
+        "id": "000011c83d--626ab04adbe4e9761d7b5613",
+        "task_suite_id": "000011c83d--626ab04adbe4e9761d7b5611",
+        "pool_id": "1165373",
+        "user_id": "f87548bd9c317ed987e22c8ebe3dea3c",
+        "status": "ACCEPTED",
+        "reward": 1.0,
+        "tasks": [
+            {
+                "input_values": {
+                    "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/c24f504ea1d941808d7cd0ef46b926fc.jpg",
+                    "id": "Image(url='https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/c24f504ea1d941808d7cd0ef46b926fc.jpg')"
+                },
+                "id": "000011c83d--626aafee3e1f6f02bc867ea1",
+                "infinite_overlap": false,
+                "overlap": 1,
+                "pool_id": "1165373",
+                "remaining_overlap": 0,
+                "reserved_for": [],
+                "unavailable_for": [],
+                "created": "2022-04-28T15:17:02.924000"
+            },
+            {
+                "input_values": {
+                    "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/64513c280688475189471aa563f58f90.jpg",
+                    "id": "Image(url='https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/64513c280688475189471aa563f58f90.jpg')"
+                },
+                "known_solutions": [
+                    {
+                        "output_values": {
+                            "choice": "dog"
+                        },
+                        "correctness_weight": 1.0
+                    }
+                ],
+                "id": "000011c83d--626aafeb3e1f6f02bc867e85",
+                "infinite_overlap": true,
+                "pool_id": "1165373",
+                "reserved_for": [],
+                "unavailable_for": [],
+                "created": "2022-04-28T15:16:59.695000",
+                "overlap": null
+            }
+        ],
+        "automerged": false,
+        "created": "2022-04-28T15:18:34.993000",
+        "submitted": "2022-04-28T15:18:42.918000",
+        "accepted": "2022-04-28T15:22:05.774000",
+        "solutions": [
+            {
+                "output_values": {
+                    "choice": "dog"
+                }
+            },
+            {
+                "output_values": {
+                    "choice": "dog"
+                }
+            }
+        ],
+        "mixed": true,
+        "owner": {
+            "id": "0ba8b02169300a7318c04a2d1544f8cf",
+            "myself": true
+        }
+    },
+    {
+        "id": "000011c83d--626ab0534a1e946093ce11af",
+        "task_suite_id": "000011c83d--626ab0534a1e946093ce11ad",
+        "pool_id": "1165373",
+        "user_id": "f87548bd9c317ed987e22c8ebe3dea3c",
+        "status": "ACCEPTED",
+        "reward": 1.0,
+        "tasks": [
+            {
+                "input_values": {
+                    "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/e86f6ba4fa32482f8f449c06453a5734.jpg",
+                    "id": "Image(url='https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/e86f6ba4fa32482f8f449c06453a5734.jpg')"
+                },
+                "id": "000011c83d--626aafee3e1f6f02bc867ea3",
+                "infinite_overlap": false,
+                "overlap": 1,
+                "pool_id": "1165373",
+                "remaining_overlap": 0,
+                "reserved_for": [],
+                "unavailable_for": [],
+                "created": "2022-04-28T15:17:02.977000"
+            },
+            {
+                "input_values": {
+                    "image": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/dcdb302466e647469deab12229dc2ceb.jpg",
+                    "id": "Image(url='https://tlk.s3.yandex.net/dataset/cats_vs_dogs/cats/dcdb302466e647469deab12229dc2ceb.jpg')"
+                },
+                "known_solutions": [
+                    {
+                        "output_values": {
+                            "choice": "cat"
+                        },
+                        "correctness_weight": 1.0
+                    }
+                ],
+                "id": "000011c83d--626aafec3e1f6f02bc867e9b",
+                "infinite_overlap": true,
+                "pool_id": "1165373",
+                "reserved_for": [],
+                "unavailable_for": [],
+                "created": "2022-04-28T15:17:00.379000",
+                "overlap": null
+            }
+        ],
+        "automerged": false,
+        "created": "2022-04-28T15:18:43.907000",
+        "submitted": "2022-04-28T15:19:30.752000",
+        "accepted": "2022-04-28T15:22:06.315000",
+        "solutions": [
+            {
+                "output_values": {
+                    "choice": "cat"
+                }
+            },
+            {
+                "output_values": {
+                    "choice": "cat"
+                }
+            }
+        ],
+        "mixed": true,
+        "owner": {
+            "id": "0ba8b02169300a7318c04a2d1544f8cf",
+            "myself": true
+        }
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p257_026.wav",
+        "text_a": "is was accurate",
+        "text_b": "is this accurate"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p232_300.wav",
+        "text_a": "what has altered",
+        "text_b": "has altered"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p257_120.wav",
+        "text_a": "does this",
+        "text_b": "does this mean"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p232_044.wav",
+        "text_a": "we will push",
+        "text_b": "we will pull"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p232_405.wav",
+        "text_a": "we have not received a letter from the danish",
+        "text_b": "we have not yet received a letter from the irish"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p232_277.wav",
+        "text_a": "she has every confidence in his performance of his duties",
+        "text_b": "she has every confidence in her performance of her duties"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p232_241.wav",
+        "text_a": "it's quite nice",
+        "text_b": "it's pretty nice"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p232_298.wav",
+        "text_a": "he should have won",
+        "text_b": "should have won"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p232_112.wav",
+        "text_a": "you had better believe it",
+        "text_b": "you had better believe them"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p232_283.wav",
+        "text_a": "i am an secret agent",
+        "text_b": "i am an estate agent"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p257_398.wav",
+        "text_a": "he was very young",
+        "text_b": "i was very young",
+        "choice": "b"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p257_306.wav",
+        "text_a": "it should be equal",
+        "text_b": "should be equal",
+        "choice": "a"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p232_079.wav",
+        "text_a": "is now resident in england",
+        "text_b": "he not president of finland",
+        "choice": "a"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p257_183.wav",
+        "text_a": "one was a liar",
+        "text_b": "one was a lawyer",
+        "choice": "b"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p232_346.wav",
+        "text_a": "tiger is the exception",
+        "text_b": "tiger was the exception",
+        "choice": "a"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p257_317.wav",
+        "text_a": "i saw some pretty good things",
+        "text_b": "i saw some good things",
+        "choice": "b"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p257_165.wav",
+        "text_a": "i lost my head",
+        "text_b": "i lost my poor head",
+        "choice": "a"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p257_323.wav",
+        "text_a": "it is so unfair",
+        "text_b": "it is such unfair",
+        "choice": "a"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p257_033.wav",
+        "text_a": "i come to complete",
+        "text_b": "i came to complete",
+        "choice": "b"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p257_107.wav",
+        "text_a": "they will want to perform well",
+        "text_b": "they want to perform well",
+        "choice": "a"
+    },
+    {
+        "audio_hint": "https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p257_329.wav",
+        "text_a": "we must do something",
+        "text_b": "we should do something",
+        "choice": "a"
+    }
+]
