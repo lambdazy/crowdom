@@ -52,25 +52,6 @@ pip install crowdom
 
 Изучите [примеры](../examples) решения разных задач и попробуйте решить свою.
 
-<details>
-
-<summary><u>Early access для Яндексоидов [TMP]</u></summary>
-
-Запускать код DataForge можно:
-
-- На виртуальной машине во внутренней сети с Python начиная от версии 3.9 и установленным Jupyter Lab.
-- В проекте DataSphere, используя подсеть с доступом ко внутренней сети и образ с Python 3.9.
-    - Создайте проект, указав в дополнительных настройках сервисный аккаунт administrator и подсеть
-      cloud-ml-dev-nets-ru-centra1-a, либо другую dualstack подсеть, имеющую доступ ко внутренней сети Яндекса (
-      см. [скриншот](https://jing.yandex-team.ru/files/o-gulyaev/datasphere-project-for-dataforge.png)).
-    - DataForge работает на версии Python начиная с 3.9, в DataSphere эта версия поддержана только через Docker образ.
-      Создав проект, перейдите во вкладку Docker образов, выберите шаблон `python_3_9`, нажмите `Build`, после сборки
-      нажмите `Set image to project`
-      (см. скриншоты [сборки образа](https://jing.yandex-team.ru/files/o-gulyaev/datasphere-project-image.png) и его
-       [применения](https://jing.yandex-team.ru/files/o-gulyaev/datasphere-project-set-image.png)).
-
-</details>
-
 # Общие понятия <a name="concepts"></a>
 
 В данном разделе вы ознакомитесь с основными понятиями и используемой терминологией, необходимыми для понимания
