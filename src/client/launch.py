@@ -76,7 +76,6 @@ def launch(
     control_objects: List[mapping.TaskSingleSolution],  # assisted by us
     client: toloka.TolokaClient,
     interactive: bool = False,
-    name: Optional[str] = None,
     lzy: Optional[Lzy] = None,
 ) -> Optional[ClassificationArtifacts]:
     result = _launch(
@@ -86,7 +85,6 @@ def launch(
         control_objects=control_objects,
         client=client,
         interactive=interactive,
-        name=name,
         lzy=lzy,
     )
 
@@ -109,7 +107,6 @@ def launch_mos(
     client: toloka.TolokaClient,
     interactive: bool = False,
     inputs_to_metadata: Optional[Dict[mapping.Objects, mos.ObjectsMetadata]] = None,
-    name: Optional[str] = None,
     lzy: Optional[Lzy] = None,
 ) -> Optional[MOSArtifacts]:
     result = _launch(
@@ -119,7 +116,6 @@ def launch_mos(
         control_objects=[],
         client=client,
         interactive=interactive,
-        name=name,
         lzy=lzy,
         loop_cls=classification_loop.MOSLoop,
         inputs_to_metadata=inputs_to_metadata,
@@ -142,7 +138,6 @@ def launch_sbs(
     control_objects: List[mapping.TaskSingleSolution],  # assisted by us
     client: toloka.TolokaClient,
     interactive: bool = False,
-    name: Optional[str] = None,
     lzy: Optional[Lzy] = None,
 ) -> Optional[ClassificationArtifacts]:
     h_cnt = len(task_spec.function.get_hints())
@@ -158,7 +153,6 @@ def launch_sbs(
         control_objects=control_objects,
         client=client,
         interactive=interactive,
-        name=name,
         lzy=lzy,
         loop_cls=lzy_utils.SbSLoop,
         a_fr=a_fr,
@@ -180,7 +174,6 @@ def _launch(
     control_objects: List[mapping.TaskSingleSolution],
     client: toloka.TolokaClient,
     interactive: bool = False,
-    name: Optional[str] = None,
     loop_cls: Type[classification_loop.ClassificationLoop] = classification_loop.ClassificationLoop,
     lzy: Optional[Lzy] = None,
     **kwargs,
@@ -223,7 +216,7 @@ def _launch(
     training_requirement = find_training_requirement(prj.id, task_spec, client, params)
     pool_cfg = pool_config.ClassificationConfig(
         project_id=prj.id,
-        private_name=name or 'pool',
+        private_name='pool',
         reward_per_assignment=params.assignment_price,
         task_duration_hint=params.task_duration_hint,
         real_tasks_count=real_tasks_count,
@@ -341,7 +334,6 @@ def launch_experts(
     input_objects: Union[List[mapping.Objects], List[mapping.TaskSingleSolution]],
     case: experts.ExpertCase,
     client: toloka.TolokaClient,
-    name: Optional[str] = None,
     interactive: bool = False,
 ) -> List[Tuple[Union[mapping.TaskSingleSolution, mapping.Objects], mapping.TaskMultipleSolutions]]:
     assert task_spec.scenario != project.Scenario.DEFAULT, 'You should use this function for expert markup only'
@@ -371,7 +363,7 @@ def launch_experts(
 
     pool_cfg = pool_config.ExpertConfig(
         project_id=prj.id,
-        private_name=name or 'pool',
+        private_name='pool',
         public_description=case.label[task_spec.lang],
         reward_per_assignment=assignment_price,
         task_duration_hint=params.task_duration_hint,
@@ -414,7 +406,6 @@ def launch_annotation(
     control_objects: List[mapping.TaskSingleSolution],  # assisted by us
     client: toloka.TolokaClient,
     interactive: bool = False,
-    name: Optional[str] = None,
     lzy: Optional[Lzy] = None,
     s3: Optional[datasource.S3] = None,
 ) -> Optional[AnnotationArtifacts]:
@@ -482,7 +473,7 @@ def launch_annotation(
 
     check_pool_cfg = pool_config.ClassificationConfig(
         project_id=check_prj.id,
-        private_name=name or 'check pool',
+        private_name='check pool',
         reward_per_assignment=check_params.assignment_price,
         task_duration_hint=check_params.task_duration_hint,
         real_tasks_count=check_params.real_tasks_count,
@@ -496,7 +487,7 @@ def launch_annotation(
 
     markup_pool_cfg = pool_config.MarkupConfig(
         project_id=markup_prj.id,
-        private_name=name or 'markup pool',
+        private_name='markup pool',
         reward_per_assignment=params.assignment_price,
         task_duration_hint=params.task_duration_hint,
         real_tasks_count=params.real_tasks_count,
