@@ -33,7 +33,7 @@ setup(
         'python-dateutil>=2.8.2',
         'beautifulsoup4>=4.8.2',
         'matplotlib>=3.5.0',
-        'pylzy>=1.8.3',
+        'pylzy>=1.10.1',
         'pure-protobuf>=2.2.2',
         'ipywidgets==7.7.0',
         'seaborn>=0.12.2',
