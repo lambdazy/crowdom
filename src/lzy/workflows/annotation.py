@@ -70,5 +70,5 @@ def get_results(
     fb_loop: feedback_loop.FeedbackLoop,
     annotation_pool_id: str,
     evaluation_pool_id: str,
-) -> Tuple[List[List[feedback_loop.Solution]], Optional[classification.WorkerWeights]]:
+) -> Tuple[feedback_loop.Results, Optional[classification.WorkerWeights]]:
     return fb_loop.get_results(annotation_pool_id, evaluation_pool_id)

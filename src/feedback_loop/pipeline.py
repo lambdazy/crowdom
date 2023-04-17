@@ -7,7 +7,7 @@ import toloka.client as toloka
 from .. import classification, classification_loop, datasource, evaluation, mapping, pool as pool_config, utils, worker
 
 from .params import Params, Evaluation
-from .results import Solution, get_results
+from .results import Results, get_results
 
 logger = logging.getLogger(__name__)
 
@@ -146,7 +146,7 @@ class FeedbackLoop:
         self,
         markup_pool_id: str,
         check_pool_id: str,
-    ) -> Tuple[List[List[Solution]], Optional[classification.WorkerWeights]]:
+    ) -> Tuple[Results, Optional[classification.WorkerWeights]]:
         checks, worker_weights = self.get_checks_and_weights(check_pool_id)
         return (
             get_results(

@@ -294,10 +294,7 @@ def _launch(
 # tmp routine, while we didn't implement pipeline in lzy
 def select_control_tasks(
     input_objects: List[mapping.Objects],
-    results: Union[
-        classification.Results,
-        List[List[feedback_loop.Solution]],
-    ],
+    results: Union[classification.Results, feedback_loop.Results],
     min_confidence: float,
     min_overlap: int = 1,
 ) -> List[mapping.TaskSingleSolution]:
