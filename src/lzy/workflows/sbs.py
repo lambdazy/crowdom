@@ -6,7 +6,7 @@ from lzy.api.v1 import op, whiteboard
 import toloka.client as toloka
 
 from .classification import Whiteboard as ClassificationWhiteboard
-from .. import mapping, classification_loop, classification, worker
+from .. import base, mapping, classification_loop, classification, worker
 from ... import pool as pool_config
 
 
@@ -34,29 +34,27 @@ class Loop(classification_loop.ClassificationLoop):
             lang: str,
             with_control_tasks: bool = True,
             model: Optional[worker.Model] = None,
-            a_fr: int = -1,
-            b_fr: int = -1,
-            b_to: int = -1,
+            task_function: base.SbSFunction = None,
     ):
         super(Loop, self).__init__(client, task_mapping, params, lang, with_control_tasks, model)
-        self.a_fr = a_fr
-        self.b_fr = b_fr
-        self.b_to = b_to
+        h_cnt = len(task_function.get_hints())
+        i_cnt = len(task_function.get_inputs())
+        self.a_fr = h_cnt
+        self.b_fr = h_cnt + i_cnt
+        self.b_to = h_cnt + i_cnt * 2
 
     def create_pool(
             self,
             control_objects: List[mapping.TaskSingleSolution],
             pool_cfg: pool_config.ClassificationConfig,
-            check_project: bool = True,  # todo tmp for old pipelines
     ):
-        assert self.swaps
         control_objects_swapped = []
         for control_object in control_objects:
             swap = choice((True, False))
             if swap:
                 control_object = self.swap_task_solution(control_object)
             control_objects_swapped.append(control_object)
-        return super(Loop, self).create_pool(control_objects_swapped, pool_cfg, check_project)
+        return super(Loop, self).create_pool(control_objects_swapped, pool_cfg)
 
     def add_input_objects(self, pool_id: str, input_objects: List[mapping.Objects]):
         assert self.swaps

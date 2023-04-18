@@ -140,12 +140,6 @@ def launch_sbs(
     interactive: bool = False,
     lzy: Optional[Lzy] = None,
 ) -> Optional[ClassificationArtifacts]:
-    h_cnt = len(task_spec.function.get_hints())
-    i_cnt = len(task_spec.function.get_inputs())
-    a_fr = h_cnt
-    b_fr = h_cnt + i_cnt
-    b_to = h_cnt + i_cnt * 2
-
     result = _launch(
         task_spec=task_spec,
         params=params,
@@ -155,9 +149,7 @@ def launch_sbs(
         interactive=interactive,
         lzy=lzy,
         loop_cls=lzy_utils.SbSLoop,
-        a_fr=a_fr,
-        b_fr=b_fr,
-        b_to=b_to,
+        task_function=task_spec.function,
     )
 
     if result is None:
