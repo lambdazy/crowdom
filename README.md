@@ -7,6 +7,10 @@ Write plain Python code and launch data labeling without knowledge of crowdsourc
 load source data with few lines of code, choose quality-cost-speed tradeoff in interactive UI form, launch data
 labeling, study result labeling in Pandas dataframes.
 
+Crowdom uses [ʎzy](https://github.com/lambdazy/lzy/), cloud workflow runtime, to run data labeling workflow. 
+This provides _reliability_ (automatic errors retry, possibility of data labeling relaunch without losing progress) and 
+out-of-the-box _data persistence_.
+
 ## Quickstart
 
 We recommend you to look first at [image classification](https://nbviewer.org/github/lambdazy/crowdom/blob/main/examples/image_classification/image_classification.html)
@@ -14,6 +18,8 @@ example, since it demonstrates full data labeling workflow, proposed in Crowdom,
 
 In other [examples](#Examples), you can see how working with data labeling looks like for different types of tasks with
 use of Crowdom.
+
+To get the benefits of running on ʎzy, see ʎzy setup [example](https://nbviewer.org/github/lambdazy/crowdom/blob/main/examples/lzy/lzy.ipynb).
 
 Join our [Telegram chat](https://t.me/+axHOcdjbaFwzYzAy) if you want to learn more about the Crowdom or discuss your
 task with us.
@@ -54,7 +60,7 @@ interactive widgets contents (for example, to display quality-cost-speed tradeof
 | [Audio questions](https://nbviewer.org/github/lambdazy/crowdom/blob/main/examples/audio_questions/audio_questions.ipynb)                                                                                                                                         |               | Classification | Audio       | Output label set depending on the input data                                                                   |
 | [Experts registration](https://nbviewer.org/github/lambdazy/crowdom/blob/main/examples/experts_registration/experts_registration.ipynb)                                                                                                                          |               |                |             | Registration of your private expert workforce                                                                  |
 | [Task update](https://nbviewer.org/github/lambdazy/crowdom/blob/main/examples/task_update/task_update.ipynb)                                                                                                                                                     |               |                |             | Task update (instructions, UI and etc.)                                                                        |
-| [Async launch](https://nbviewer.org/github/lambdazy/crowdom/blob/main/examples/async_launch/async_launch.ipynb)                                                                                                                                                  |               |                |             | Non-blocking or parallel labeling launches                                                                     |
+| [ʎzy usage](https://nbviewer.org/github/lambdazy/crowdom/blob/main/examples/lzy/lzy.ipynb)                                                                                                                                                                       |               |                |             | ʎzy setup, parallel labelings                                                                                  |
 
 ## Communication
 
