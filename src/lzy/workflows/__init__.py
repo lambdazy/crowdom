@@ -11,6 +11,7 @@ from .annotation import (
     run_loop as run_annotation_loop,
     get_results as get_annotation_results,
 )
+from .sbs import Whiteboard as SbSWhiteboard, Loop as SbSLoop
 
 crowdom_label = 'crowdom'
 wb_version = '0.0'  # add it to whiteboard tags in case if data format changed in incompatible way

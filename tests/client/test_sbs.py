@@ -2,7 +2,8 @@ from typing import List, Union
 
 import mock
 
-from crowdom import base, client, mapping, objects
+from crowdom import base, mapping, objects
+from crowdom.lzy import SbSLoop
 
 
 def generate_tasks(count: int, control: bool = False) -> List[Union[mapping.Objects, mapping.TaskSingleSolution]]:
@@ -22,56 +23,28 @@ def generate_tasks(count: int, control: bool = False) -> List[Union[mapping.Obje
     return tasks
 
 
-@mock.patch('crowdom.client.sbs.choice')
-@mock.patch('crowdom.client.relaunch.choice')
-@mock.patch('crowdom.client.sbs.launch')
-def test_sbs_swaps(launch, relaunch_choice, choice):
-    swaps = [False, True, False, True, True, True, False]
-    # swaps for 5 real tasks will be created in relaunch.get_swaps
-    relaunch_choice.side_effect = swaps[:5]
-    # swaps for 2 control objects will be created in sbs.launch
-    choice.side_effect = swaps[5:]
+@mock.patch('crowdom.classification_loop.ClassificationLoop.get_results')
+@mock.patch('crowdom.classification_loop.ClassificationLoop.add_input_objects')
+@mock.patch('crowdom.classification_loop.ClassificationLoop.create_pool')
+@mock.patch('crowdom.lzy.workflows.sbs.choice')
+def test_sbs_new(choice, create_pool, add_input_objects, get_results):
+    loop = SbSLoop(
+        client=None,  # noqa
+        task_mapping=None,  # noqa
+        params=None,  # noqa
+        lang=None,  # noqa
+        with_control_tasks=True,
+        model=None,
+        task_function=base.SbSFunction(inputs=(objects.Audio, objects.Text), hints=(objects.Image,)),
+    )
 
-    task_spec = base.TaskSpec(
-        function=base.SbSFunction(inputs=(objects.Audio, objects.Text), hints=(objects.Image,)),
-        id='id',
-        name=base.EMPTY_STRING,  # noqa
-        description=None,
-        instruction=None,
-    )  # noqa
+    pool_cfg = None
+    pool_id = 'pool_id'
 
-    input_objects = generate_tasks(5)
     control_objects = generate_tasks(2, control=True)
-
-    a_win, b_win = base.SbSChoice.A, base.SbSChoice.B
-    workers = [f'w{i}' for i in range(30)]  # precise type does not matter for this test
-
-    # results for swapped pairs
-    launch.return_value = [
-        (
-            {a_win: 0.9, b_win: 0.1},
-            [(b_win, workers[27]), (b_win, workers[9]), (a_win, workers[2]), (a_win, workers[7])],
-        ),
-        ({a_win: 0.3, b_win: 0.7}, [(b_win, workers[1]), (b_win, workers[27]), (a_win, workers[15])]),
-        ({a_win: 0.5, b_win: 0.5}, [(a_win, workers[11]), (b_win, workers[12])]),
-        ({a_win: 0.8, b_win: 0.2}, [(a_win, workers[10]), (b_win, workers[3]), (a_win, workers[7])]),
-        ({a_win: 1.0, b_win: 0.0}, [(a_win, workers[19]), (a_win, workers[3]), (a_win, workers[20])]),
-    ], None
-
-    results, worker_weights = client.launch_sbs(task_spec, None, input_objects, control_objects, None, None)  # noqa
-
-    # expected swaps for pairs
-    expected_input_objects_swapped = [
-        (
-            objects.Image(url=f'https://storage.net/{i}.jpg'),
-            objects.Audio(url=f'https://storage.net/{a}.wav'),
-            objects.Text(text=f'text {a}'),
-            objects.Audio(url=f'https://storage.net/{b}.wav'),
-            objects.Text(text=f'text {b}'),
-        )
-        for i, (a, b) in enumerate([(0, 'a'), ('b', 1), (2, 'c'), ('d', 3), ('e', 4)])
-    ]
-    expected_control_objects_swapped = [
+    choice.side_effect = [True, False]  # control objects swaps
+    loop.create_pool(control_objects, pool_cfg)
+    create_pool.assert_called_with([
         (
             (
                 objects.Image(url=f'https://storage.net/control-{i}.jpg'),
@@ -83,26 +56,49 @@ def test_sbs_swaps(launch, relaunch_choice, choice):
             (choice,),
         )
         for i, (a, b, choice) in enumerate([('a', 0, base.SbSChoice.B), (1, 'b', base.SbSChoice.B)])
-    ]
+    ], pool_cfg)
 
-    launch.assert_called_with(
-        task_spec=task_spec,
-        params=None,
-        input_objects=expected_input_objects_swapped,
-        control_objects=expected_control_objects_swapped,
-        client=None,
-        interactive=None,
-        name=None,
-    )
-
-    # results for un-swapped pairs
-    assert results == [
+    input_objects = generate_tasks(5)
+    loop.swaps = [False, True, False, True, True]  # input objects swaps
+    loop.add_input_objects(pool_id, input_objects)
+    add_input_objects.assert_called_with(pool_id, [
         (
-            {a_win: 0.9, b_win: 0.1},
-            [(b_win, workers[27]), (b_win, workers[9]), (a_win, workers[2]), (a_win, workers[7])],
-        ),
-        ({b_win: 0.3, a_win: 0.7}, [(a_win, workers[1]), (a_win, workers[27]), (b_win, workers[15])]),
-        ({a_win: 0.5, b_win: 0.5}, [(a_win, workers[11]), (b_win, workers[12])]),
-        ({b_win: 0.8, a_win: 0.2}, [(b_win, workers[10]), (a_win, workers[3]), (b_win, workers[7])]),
-        ({b_win: 1.0, a_win: 0.0}, [(b_win, workers[19]), (b_win, workers[3]), (b_win, workers[20])]),
-    ]
+            objects.Image(url=f'https://storage.net/{i}.jpg'),
+            objects.Audio(url=f'https://storage.net/{a}.wav'),
+            objects.Text(text=f'text {a}'),
+            objects.Audio(url=f'https://storage.net/{b}.wav'),
+            objects.Text(text=f'text {b}'),
+        )
+        for i, (a, b) in enumerate([(0, 'a'), ('b', 1), (2, 'c'), ('d', 3), ('e', 4)])
+    ])
+
+    a_win, b_win = base.SbSChoice.A, base.SbSChoice.B
+    workers = [f'w{i}' for i in range(30)]  # precise type does not matter for this test
+
+    # swapped results
+    get_results.side_effect = [(
+        [
+            (
+                {a_win: 0.9, b_win: 0.1},
+                [(b_win, workers[27]), (b_win, workers[9]), (a_win, workers[2]), (a_win, workers[7])],
+            ),
+            ({a_win: 0.3, b_win: 0.7}, [(b_win, workers[1]), (b_win, workers[27]), (a_win, workers[15])]),
+            ({a_win: 0.5, b_win: 0.5}, [(a_win, workers[11]), (b_win, workers[12])]),
+            ({a_win: 0.8, b_win: 0.2}, [(a_win, workers[10]), (b_win, workers[3]), (a_win, workers[7])]),
+            ({a_win: 1.0, b_win: 0.0}, [(a_win, workers[19]), (a_win, workers[3]), (a_win, workers[20])]),
+        ],
+        None,
+    )]
+    assert loop.get_results(pool_id, input_objects) == (
+        [
+            (
+                {a_win: 0.9, b_win: 0.1},
+                [(b_win, workers[27]), (b_win, workers[9]), (a_win, workers[2]), (a_win, workers[7])],
+            ),
+            ({b_win: 0.3, a_win: 0.7}, [(a_win, workers[1]), (a_win, workers[27]), (b_win, workers[15])]),
+            ({a_win: 0.5, b_win: 0.5}, [(a_win, workers[11]), (b_win, workers[12])]),
+            ({b_win: 0.8, a_win: 0.2}, [(b_win, workers[10]), (a_win, workers[3]), (b_win, workers[7])]),
+            ({b_win: 1.0, a_win: 0.0}, [(b_win, workers[19]), (b_win, workers[3]), (b_win, workers[20])]),
+        ],
+        None
+    )

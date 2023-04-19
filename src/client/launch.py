@@ -5,6 +5,7 @@ import threading
 from typing import List, Optional, Tuple, Dict, Union, Type
 
 from lzy.api.v1 import Lzy, LocalRuntime
+from lzy.whiteboards.index import DummyWhiteboardIndexClient
 from lzy.types import File
 import toloka.client as toloka
 
@@ -75,7 +76,6 @@ def launch(
     control_objects: List[mapping.TaskSingleSolution],  # assisted by us
     client: toloka.TolokaClient,
     interactive: bool = False,
-    name: Optional[str] = None,
     lzy: Optional[Lzy] = None,
 ) -> Optional[ClassificationArtifacts]:
     result = _launch(
@@ -85,7 +85,6 @@ def launch(
         control_objects=control_objects,
         client=client,
         interactive=interactive,
-        name=name,
         lzy=lzy,
     )
 
@@ -108,7 +107,7 @@ def launch_mos(
     client: toloka.TolokaClient,
     interactive: bool = False,
     inputs_to_metadata: Optional[Dict[mapping.Objects, mos.ObjectsMetadata]] = None,
-    name: Optional[str] = None,
+    lzy: Optional[Lzy] = None,
 ) -> Optional[MOSArtifacts]:
     result = _launch(
         task_spec=task_spec,
@@ -117,7 +116,7 @@ def launch_mos(
         control_objects=[],
         client=client,
         interactive=interactive,
-        name=name,
+        lzy=lzy,
         loop_cls=classification_loop.MOSLoop,
         inputs_to_metadata=inputs_to_metadata,
     )
@@ -132,6 +131,34 @@ def launch_mos(
     return MOSArtifacts(plots=plots, wb=wb, algorithm_ci=algorithm_ci)
 
 
+def launch_sbs(
+    task_spec: PreparedTaskSpec,
+    params: Params,
+    input_objects: List[mapping.Objects],
+    control_objects: List[mapping.TaskSingleSolution],  # assisted by us
+    client: toloka.TolokaClient,
+    interactive: bool = False,
+    lzy: Optional[Lzy] = None,
+) -> Optional[ClassificationArtifacts]:
+    result = _launch(
+        task_spec=task_spec,
+        params=params,
+        input_objects=input_objects,
+        control_objects=control_objects,
+        client=client,
+        interactive=interactive,
+        lzy=lzy,
+        loop_cls=lzy_utils.SbSLoop,
+        task_function=task_spec.function,
+    )
+
+    if result is None:
+        return None
+
+    _, wb, plots = result
+    return ClassificationArtifacts(plots=plots, wb=wb)
+
+
 def _launch(
     task_spec: PreparedTaskSpec,
     params: Params,
@@ -139,7 +166,6 @@ def _launch(
     control_objects: List[mapping.TaskSingleSolution],
     client: toloka.TolokaClient,
     interactive: bool = False,
-    name: Optional[str] = None,
     loop_cls: Type[classification_loop.ClassificationLoop] = classification_loop.ClassificationLoop,
     lzy: Optional[Lzy] = None,
     **kwargs,
@@ -182,7 +208,7 @@ def _launch(
     training_requirement = find_training_requirement(prj.id, task_spec, client, params)
     pool_cfg = pool_config.ClassificationConfig(
         project_id=prj.id,
-        private_name=name or 'pool',
+        private_name='pool',
         reward_per_assignment=params.assignment_price,
         task_duration_hint=params.task_duration_hint,
         real_tasks_count=real_tasks_count,
@@ -197,13 +223,12 @@ def _launch(
     plotter = None
     stop_event = threading.Event()
 
-    lzy = lzy or Lzy(runtime=LocalRuntime())
+    lzy = lzy or Lzy(runtime=LocalRuntime(), whiteboard_client=DummyWhiteboardIndexClient())
 
     try:
         with lzy.workflow(f'{lzy_utils.crowdom_label}__{task_spec.id}', interactive=False, eager=True) as wf:
-            wb = wf.create_whiteboard(lzy_utils.ClassificationWhiteboard, tags=[
-                lzy_utils.crowdom_label, task_spec.id, lzy_utils.wb_version,
-            ])
+            wb_cls = {lzy_utils.SbSLoop: lzy_utils.SbSWhiteboard}.get(type(loop), lzy_utils.ClassificationWhiteboard)
+            wb = wf.create_whiteboard(wb_cls, tags=[lzy_utils.crowdom_label, task_spec.id, lzy_utils.wb_version])
             wb.task_spec = lzy_utils.TaskSpec.serialize(task_spec.task_spec)
             wb.lang = task_spec.lang
             wb.input_objects = [lzy_utils.Objects.serialize(objects) for objects in input_objects]
@@ -211,20 +236,25 @@ def _launch(
             wb.params = lzy_utils.Params.serialize(params)
             wb.project = lzy_utils.TolokaProject.serialize(prj)
 
+            # TODO: deencapsulation of sbs swaps logic;
+            #  quick&dirty to not have outer workflow/whiteboard for sbs case
+            if isinstance(loop, lzy_utils.SbSLoop):
+                wb.swaps = loop.get_swaps(input_objects)
+                loop.swaps = wb.swaps
+
             pool_id = lzy_utils.create_classification_pool(loop, control_objects, pool_cfg)
             wb.pool_id = pool_id
 
-            if interactive:
-                plotter = metrics.ClassificationMetricsPlotter(
-                    toloka_client=client,
-                    stop_event=stop_event,
-                    redraw_period_seconds=plotter_redraw_period_seconds,
-                    task_mapping=task_spec.task_mapping,
-                    pool_id=pool_id,
-                    task_duration_hint=params.task_duration_hint,
-                    params=params.classification_loop_params,
-                    assignment_evaluation_strategy=loop.assignment_evaluation_strategy,
-                )
+            plotter = metrics.ClassificationMetricsPlotter(
+                toloka_client=client,
+                stop_event=stop_event,
+                redraw_period_seconds=plotter_redraw_period_seconds,
+                task_mapping=task_spec.task_mapping,
+                pool_id=pool_id,
+                task_duration_hint=params.task_duration_hint,
+                params=params.classification_loop_params,
+                assignment_evaluation_strategy=loop.assignment_evaluation_strategy,
+            )
 
             lzy_utils.add_input_objects(loop, input_objects, pool_id)
             wf.barrier()
@@ -244,7 +274,7 @@ def _launch(
 
             return loop, wb, File(plotter.plots_image_file_name)
     except KeyboardInterrupt:
-        if wb.pool_id:
+        if wb.pool_id and _is_pool_auto_close_applicable(lzy):
             client.close_pool(wb.pool_id)
         return None
     finally:
@@ -256,10 +286,7 @@ def _launch(
 # tmp routine, while we didn't implement pipeline in lzy
 def select_control_tasks(
     input_objects: List[mapping.Objects],
-    results: Union[
-        classification.Results,
-        List[List[feedback_loop.Solution]],
-    ],
+    results: Union[classification.Results, feedback_loop.Results],
     min_confidence: float,
     min_overlap: int = 1,
 ) -> List[mapping.TaskSingleSolution]:
@@ -296,7 +323,6 @@ def launch_experts(
     input_objects: Union[List[mapping.Objects], List[mapping.TaskSingleSolution]],
     case: experts.ExpertCase,
     client: toloka.TolokaClient,
-    name: Optional[str] = None,
     interactive: bool = False,
 ) -> List[Tuple[Union[mapping.TaskSingleSolution, mapping.Objects], mapping.TaskMultipleSolutions]]:
     assert task_spec.scenario != project.Scenario.DEFAULT, 'You should use this function for expert markup only'
@@ -326,7 +352,7 @@ def launch_experts(
 
     pool_cfg = pool_config.ExpertConfig(
         project_id=prj.id,
-        private_name=name or 'pool',
+        private_name='pool',
         public_description=case.label[task_spec.lang],
         reward_per_assignment=assignment_price,
         task_duration_hint=params.task_duration_hint,
@@ -369,7 +395,6 @@ def launch_annotation(
     control_objects: List[mapping.TaskSingleSolution],  # assisted by us
     client: toloka.TolokaClient,
     interactive: bool = False,
-    name: Optional[str] = None,
     lzy: Optional[Lzy] = None,
     s3: Optional[datasource.S3] = None,
 ) -> Optional[AnnotationArtifacts]:
@@ -437,7 +462,7 @@ def launch_annotation(
 
     check_pool_cfg = pool_config.ClassificationConfig(
         project_id=check_prj.id,
-        private_name=name or 'check pool',
+        private_name='check pool',
         reward_per_assignment=check_params.assignment_price,
         task_duration_hint=check_params.task_duration_hint,
         real_tasks_count=check_params.real_tasks_count,
@@ -451,7 +476,7 @@ def launch_annotation(
 
     markup_pool_cfg = pool_config.MarkupConfig(
         project_id=markup_prj.id,
-        private_name=name or 'markup pool',
+        private_name='markup pool',
         reward_per_assignment=params.assignment_price,
         task_duration_hint=params.task_duration_hint,
         real_tasks_count=params.real_tasks_count,
@@ -465,7 +490,7 @@ def launch_annotation(
     plotter = None
     stop_event = threading.Event()
 
-    lzy = lzy or Lzy(runtime=LocalRuntime())
+    lzy = lzy or Lzy(runtime=LocalRuntime(), whiteboard_client=DummyWhiteboardIndexClient())
 
     try:
         with lzy.workflow(f'{lzy_utils.crowdom_label}__{task_spec.id}', interactive=False, eager=True) as wf:
@@ -523,12 +548,19 @@ def launch_annotation(
 
             return AnnotationArtifacts(wb=wb, plots=File(plotter.plots_image_file_name))
     except KeyboardInterrupt:
-        if wb.annotation_pool_id:
+        if wb.annotation_pool_id and _is_pool_auto_close_applicable(lzy):
             client.close_pool(wb.annotation_pool_id)
-        if wb.evaluation_pool_id:
+        if wb.evaluation_pool_id and _is_pool_auto_close_applicable(lzy):
             client.close_pool(wb.evaluation_pool_id)
         return None
     finally:
         if plotter:
             stop_event.set()
             plotter.join(timeout=plotter_join_timeout_seconds)
+
+
+# TODO: bring back pool auto closing for remote lzy launch.
+#   After manual stop pools will be closed, but after relaunch from cache changed pools status will cause invalid
+#   loop state, we need to discover current pool status automatically.
+def _is_pool_auto_close_applicable(lzy: Lzy) -> bool:
+    return isinstance(lzy.runtime, LocalRuntime)

@@ -7,7 +7,7 @@ import toloka.client as toloka
 from .. import classification, classification_loop, datasource, evaluation, mapping, pool as pool_config, utils, worker
 
 from .params import Params, Evaluation
-from .results import Solution, get_results
+from .results import Results, get_results
 
 logger = logging.getLogger(__name__)
 
@@ -78,15 +78,10 @@ class FeedbackLoop:
         control_objects: List[mapping.TaskSingleSolution],
         markup_pool_config: pool_config.MarkupConfig,
         check_pool_config: pool_config.ClassificationConfig,
-        check_projects: bool = True,  # todo tmp for old pipelines
     ) -> Tuple[toloka.Pool, toloka.Pool]:
         check_sample = self.evaluation.assignment_check_sample
         if check_sample is not None and check_sample.max_tasks_to_check is not None:
             assert check_sample.max_tasks_to_check <= markup_pool_config.real_tasks_count
-        if check_projects:
-            assert mapping.check_project_is_suitable(
-                self.client.get_project(markup_pool_config.project_id), self.markup_task_mapping
-            )
 
         markup_pool = self.client.create_pool(pool_config.create_pool_params(markup_pool_config))
 
@@ -99,7 +94,7 @@ class FeedbackLoop:
         logger.debug(f'creating {len(markup_tasks)} markup tasks')
         self.client.create_tasks(markup_tasks, allow_defaults=True, async_mode=True, skip_invalid_items=False)
 
-        check_pool = self.check_loop.create_pool(control_objects, check_pool_config, check_projects)
+        check_pool = self.check_loop.create_pool(control_objects, check_pool_config)
 
         if self.model_ws is None:
             # If model is presented, first attempt is by it, no need to open pool.
@@ -146,7 +141,7 @@ class FeedbackLoop:
         self,
         markup_pool_id: str,
         check_pool_id: str,
-    ) -> Tuple[List[List[Solution]], Optional[classification.WorkerWeights]]:
+    ) -> Tuple[Results, Optional[classification.WorkerWeights]]:
         checks, worker_weights = self.get_checks_and_weights(check_pool_id)
         return (
             get_results(

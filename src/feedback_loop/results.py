@@ -45,13 +45,16 @@ class Solution:
         )
 
 
+Results = List[List[Solution]]
+
+
 def get_results(
     pool_input_objects: List[mapping.Objects],
     markup_assignments: List[mapping.AssignmentSolutions],
     solution_id_to_evaluation: Dict[mapping.TaskID, evaluation.SolutionEvaluation],
     markup_task_mapping: mapping.TaskMapping,
     check_task_mapping: mapping.TaskMapping,
-) -> List[List[Solution]]:
+) -> Results:
     assert all(
         assignment.status in (toloka.Assignment.ACCEPTED, toloka.Assignment.REJECTED)
         for assignment, _ in markup_assignments

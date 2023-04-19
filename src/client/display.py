@@ -198,11 +198,12 @@ class ClassificationResults(LabelingResults):
     def __init__(
         self,
         input_objects: List[mapping.Objects],
-        results: List[Tuple[classification.TaskLabelsProbas, List[classification.WorkerLabel]]],
+        results: classification.Results,
         task_spec: spec.PreparedTaskSpec,
         worker_weights: Optional[classification.WorkerWeights] = None,
     ):
         self.task_spec = task_spec
+        self.raw = results  # TODO: temporarily for select_control_tasks()
 
         # we will index these input objects by dataframe row indexes
         row_input_objects, row_output_objects = [], []
@@ -290,11 +291,12 @@ class AnnotationResults(LabelingResults):
     def __init__(
         self,
         input_objects: List[mapping.Objects],
-        results: List[List[feedback_loop.Solution]],
+        results: feedback_loop.Results,
         task_spec: spec.AnnotationTaskSpec,
         worker_weights: Optional[classification.WorkerWeights] = None,
     ):
         self.task_spec = task_spec
+        self.raw = results  # TODO: temporarily for select_control_tasks()
 
         row_input_objects, row_output_objects = [], []
 

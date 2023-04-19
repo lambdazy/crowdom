@@ -86,10 +86,7 @@ class ClassificationLoop:
         self,
         control_objects: List[mapping.TaskSingleSolution],
         pool_cfg: pool_config.ClassificationConfig,
-        check_project: bool = True,  # todo tmp for old pipelines
     ) -> toloka.Pool:
-        if check_project:
-            assert mapping.check_project_is_suitable(self.client.get_project(pool_cfg.project_id), self.task_mapping)
         assert pool_cfg.overlap == self.params.overlap.min_overlap
         pool = self.client.create_pool(pool_config.create_pool_params(pool_cfg))
         control_tasks = []
